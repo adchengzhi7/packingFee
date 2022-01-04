@@ -155,7 +155,7 @@
                     }
                     // vm.boxSpaceLeftinStage.width =vm.boxSpaceLeftinStage.width-product.width ;
                     vm.boxSpaceLeftinStage.height =vm.boxSpaceLeftinStage.height-product.height ;
-                    vm.stepMsg  += "boxCount:"+vm.boxCount+ "; level:"+vm.level+"; boxLeft:"+vm.boxSpaceLeft.width+","+vm.boxSpaceLeft.height+","+vm.boxSpaceLeft.depth+"; boxStageLeft:"+vm.boxSpaceLeftinStage.width+","+vm.boxSpaceLeftinStage.height+","+vm.boxSpaceLeftinStage.depth+",</br>";
+                    vm.stepMsg  += "第 "+vm.boxCount+ "箱; 第 "+vm.level+"層; 物流箱剩餘空間:"+vm.boxSpaceLeft.width+" X "+vm.boxSpaceLeft.height+" X "+vm.boxSpaceLeft.depth+"第"+vm.level+"層箱剩餘空間:"+vm.boxSpaceLeftinStage.width+" X "+vm.boxSpaceLeftinStage.height+" X "+vm.boxSpaceLeftinStage.depth+",</br>";
                 }else{
                     if(vm.boxSpaceLeft.width < product.width || vm.boxSpaceLeft.height <product.height ||vm.boxSpaceLeft.depth < product.depth ){
                         vm.addOneBox(box,product);
@@ -189,7 +189,7 @@
                 vm.boxSpaceLeftinStage.height=box.height-product.height;
                 vm.boxSpaceLeftinStage.depth=box.depth-product.depth;
                 vm.lockStageDepth =  product.depth ;
-                vm.stepMsg  += "boxCount:"+vm.boxCount+ "; level:"+vm.level+"; boxLeft:"+vm.boxSpaceLeft.width+","+vm.boxSpaceLeft.height+","+vm.boxSpaceLeft.depth+"; boxStageLeft:"+vm.boxSpaceLeftinStage.width+","+vm.boxSpaceLeftinStage.height+","+vm.boxSpaceLeftinStage.depth+",</br>";
+                vm.stepMsg  += "第 "+vm.boxCount+ "箱; 第 "+vm.level+"層; 物流箱剩餘空間:"+vm.boxSpaceLeft.width+" X "+vm.boxSpaceLeft.height+" X "+vm.boxSpaceLeft.depth+"第"+vm.level+"層箱剩餘空間:"+vm.boxSpaceLeftinStage.width+" X "+vm.boxSpaceLeftinStage.height+" X "+vm.boxSpaceLeftinStage.depth+",</br>";
                 return  vm.stepMsg;
             },
             reset(){
